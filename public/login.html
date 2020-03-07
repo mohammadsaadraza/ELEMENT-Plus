@@ -1,0 +1,50 @@
+<html>
+<head>
+    <link rel="stylesheet" href="./css/styleLogin.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+<!-- <iframe name="frame" style="display: none;"></iframe>  -->
+<div class="container" id="container">
+	<div class="form-container sign-up-container">
+		<form id="sign-up" action="/users" method="POST">
+			<h1>Create Account</h1>
+			<input type="text" placeholder="Name" id="name" name="name" required/>
+			<input type="email" placeholder="Email" id="email" name="email" required/>
+			<input type="password" placeholder="Password" id="password" name="password" required/>
+			<button type="submit">Sign Up</button>
+		</form>
+	</div>
+	<div class="form-container sign-in-container">
+		<form action="/users/login" method="POST" id="sign-in">
+			<h1>Sign in</h1>
+			
+
+			<input type="email" placeholder="Email" name="email" id="email" required/>
+			<input type="password" placeholder="Password" name="password" id="password" required/>
+			
+			<button type="submit">Sign In</button>
+		</form>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+				<h1>Welcome Back!</h1>
+				<p>To keep connected with us please login with your personal info</p>
+				<button class="ghost" id="signIn">Sign In</button>
+			</div>
+			<div class="overlay-panel overlay-right">
+				<h1>Hello, Friend!</h1>
+				<p>Enter your personal details and start journey with us</p>
+				<button class="ghost" id="signUp">Sign Up</button>
+			</div>
+		</div>
+	</div>
+</div>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+<script type="text/javascript" src="./js/scriptLogin.js"></script>
+</body>
+</html>

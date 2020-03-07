@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css?family=Questrial");
+
+:root {
+    --fontFamily: "Questrial", sans-serif;
+    --black: #000;
+    --controlsColor: #acafb6;
+    --white: #fff;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+* {
+    box-sizing: border-box;
+}
+.c_video{
+    border: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    background: black;
+    outline: none;
+
+}
+video{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+.controls{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* border: 1px solid white; */
+    padding: 0.8rem;
+}
+.controls .quality {
+    margin-left: 1rem;
+    float: right;
+    background: rgba(0,0,0,0);
+    color: white;
+    border: 0;
+    font-size: 1.5rem;
+    padding: 1rem;
+    border-radius: 5px;
+    
+}
+.controls .title{
+    margin-left: 1rem;
+    float: right;
+    color: white;
+    font-size: 1.5rem;
+    padding: 1rem;
+    border-radius: 5px;
+}
+.controls .backButton{
+    margin-left: 1rem;
+    float: left;
+    background: rgba(0,0,0,0);
+    color: white;
+    border: 0;
+    font-size: 1.5rem;
+    padding: 1rem;
+    border-radius: 5px;
+}
+.controls .backButton:hover, .controls .quality:hover, .controls .title:hover{
+    background: white;
+    color: black;
+}
+@media (max-width: 560px){
+    .controls .title {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+

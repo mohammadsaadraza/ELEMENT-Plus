@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="videoStyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <div id="c_video" class="c_video">
+        <video src="" controls autoplay></video>
+        <div class="controls">
+            <button class="backButton">
+                <i class="fa fa-arrow-left"></i>
+            </button>
+            
+            <button class="quality">
+                <i class="fa fa-cog"></i>
+            </button>
+            <label class="title" id="videoTitle"></label>
+        </div>
+    </div>
+
+
+
+    <script src="videoScript.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+                var timer;
+                $(document).mousemove(function() {
+                if (timer) {
+                    clearTimeout(timer);
+                    timer = 0;
+                }
+
+                $('.controls').fadeIn(500);
+                timer = setTimeout(function() {
+                        $('.controls').fadeOut();
+                    }, 2500);
+                });
+            
+        });
+      
+
+    </script>
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

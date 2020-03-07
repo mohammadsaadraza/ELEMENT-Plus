@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+* {
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+button:focus {outline:0;}
+.season{
+    position: relative;
+    padding: 2rem;
+    margin-left: 3rem;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    /* border: white 1px solid; */
+}
+.col-md-3{
+    border: black 2px solid;
+}
+.season-jumbo-addon{
+    position: relative;
+    width: 90%;
+    /* background: red; */
+    height: auto;
+    padding: 2rem;
+    margin: auto;
+    /* display: flex; */
+    justify-content: center;
+    border-radius: 20px;
+    /* background: transparent; */
+    background: rgba(255, 255, 255, 0.2);
+
+}
+.card-season {
+    /* display: flex !important; */
+    height: 170px;
+    width: 200px;
+    border-radius: 10px;
+    border: black;
+    /* box-shadow: 0.3rem 0.3rem 2rem white; */
+  /*   margin-left: -50px; */
+    transition: 0.4s ease-out;
+    position: relative;
+    left: 0px;
+    overflow: hidden;
+    border: black;
+  }
+  .card-season .card-season-text{
+      color: white;
+      position: absolute;
+      bottom: 5px;
+      left: 10px;
+      font-size: 1.5rem;
+      font-weight: bolder;
+      letter-spacing: 2px;
+      transition: 0.5s ease;
+  }
+  .card-season:hover .card-season-text{
+      color: black;
+      transition: 0.5s ease;
+      z-index: 3;
+  }
+  .card-season::after{
+      content: '';
+      background: rgba(0,0,0, 0.4);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+  }
+  .card-img-top{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+  
+  /* .card-season:not(:first-child) {
+      margin-left: -80px;
+  } */
+  
+  .card-season:hover {
+    transform: scale(1.3);
+    box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.3);
+    transition: 0.4s ease-out;
+    z-index: 1;
+  }
+  
+  /* .card-season:hover ~ .card-season {
+    position: relative;
+    left: 100px;
+    transition: 0.4s ease-out;
+  } */
+  
+.card-season .reveal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    padding: 0;
+}
+
+.card-season:hover .reveal {
+    height: 100%;
+    width: 100%;
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 1s ease;
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.5);
+}
+.reveal i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+header {
+    position: relative;
+    height: 95vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  header video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: fill;
+    border-bottom: grey 2px solid;
+    
+   /*  min-width: 100%;
+    min-height: 100%; */
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    /* -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%); */
+  }
+  .upper-portion{
+      position: relative;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      background: rgba(0,0,0, 0.4);
+      box-shadow: inset 20px 20px 250px black,inset -300px -20px 250px black;
+      border-bottom: grey 2px solid;
+  }
+  .upper-info-section{
+      padding: 2rem;
+      width: 50%;
+      height: auto;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 20px;
+      overflow: hidden;
+      max-height: 80%;
+  }
+  header .backButton{
+      position: absolute !important;
+      top: 5%;
+      left: 3%;
+      background: transparent;
+      color:grey;
+      font-size: 1.5rem;
+      border: 0;
+      transition: 0.5s ease;
+      z-index: 2;
+      cursor: pointer;
+      text-decoration: none;
+  }
+  header .backButton:hover{
+      transform: scale(1.2);
+      color: white;
+      transition: 0.5s ease;
+  }
+  .trailerPlay{
+    position: absolute !important;
+    top: 5%;
+    right: 3%;
+    background: transparent;
+    color:grey;
+    font-size: 1.5rem;
+    border: 0;
+    transition: 0.5s ease;
+    z-index: 4;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+  }
+  .trailerPlay:hover{
+    transform: scale(1.2);
+    color: white;
+    transition: 0.5s ease;
+  }
+
+  .card-upper-portion{
+    /* position: absolute;
+    left: 50%;
+    transform: translate(-50%,0); */
+    text-align: center;
+    height: 268px;
+    width: 168px;
+    transition: 0.5s ease;
+    border: black;
+    border-radius: 10px;
+    overflow: hidden !important;
+}
+.card-img-top{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.below {
+    padding: 1rem;
+    /* position: absolute;
+    top: 65%;
+    left: 25%; */
+    background: white;
+    color: black;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: 1.3rem;
+    width: 168px;
+    text-align: center;
+}
+.episodes{
+    position: absolute;
+    bottom: 0;
+    left: 4%;
+    color: white;
+    padding: 0 1rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    border-radius: 5px;
+    border-bottom: #d4af37 4px solid;
+}
+.text{
+    /* position: absolute;
+    top: 25%;
+    left: 40%; */
+    padding: 1rem;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-shadow: 2px 2px black;
+
+}
+.text h2{
+    font-size: 3rem;
+}
+  
+  
+  header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color:black;
+    opacity: 0.7;
+    z-index: 0;
+    box-shadow: inset 200px 20px 250px black, inset -20px -20px 50px black !important;
+  }
+  .visible-section {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background: #141414;
+}
+@media (max-width: 1200px){
+    .below{
+        font-size: 1rem;
+    }
+    .text{
+        font-size: 0.8rem;
+        text-align: center;
+        visibility: hidden;
+    }
+    .info-section{
+        visibility: hidden;
+    }
+    .text h2{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    /* .card{
+        height: 228px;
+        width: 128px;
+    } */
+    header{
+        height: 100vh;
+    }
+    .upper-info-section{
+        
+        width: 230px;
+        height: 410px;
+        min-height: 410px;
+        min-width: 230px;
+        
+    }
+    .cardandbutton{
+        display: inline-block;
+    }
+    /* .card-season{
+        box-shadow: 0.3rem 0.3rem 2rem white; 
+         height: 140px;
+        width: 170px; 
+    } */
+}
+@media(max-width:768px){
+    .card-season{
+        height: 220px;
+        width: 250px;
+        margin-left: 30%;
+        /* transform: translateX(-50%); */
+    }
+}

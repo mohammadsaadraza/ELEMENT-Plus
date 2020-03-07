@@ -1,0 +1,40 @@
+<html>
+<head>
+    <link rel="stylesheet" href="./css/styleLogin.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+<iframe name="frame" style="display: none;"></iframe> 
+<a href="../home.html" class="backButton"><i class="fa fa-angle-left"> Back</i></a>
+<div class="container" id="container">
+    
+	
+	<div class="form-container sign-in-container">
+		<form action="/contact" method="POST">
+			<h1>Contact Us</h1>
+			
+
+			<input type="text" placeholder="Email" id="email" name="email" required/>
+			<input type="text" placeholder="Write your query here" id="query" name="query" required/>
+			
+			<button type="submit">Submit</button>
+		</form
+		>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			
+			<div class="overlay-panel overlay-right">
+				<h1>Hello, Friend!</h1>
+				<p>Enter your name and your query and we'll get back to you.</p>
+			</div>
+		</div>
+	</div>
+</div>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+<script type="text/javascript" src="./js/scriptLogin.js"></script>
+</body>
+</html>
