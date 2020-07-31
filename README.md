@@ -1,4 +1,4 @@
-# ELEMENT-
+# ELEMENT-Plus
 An on-demand video streaming platform
 
 Download and run command "npm start" on the CLI. Then go to your browser and type "localhost:5000/".
